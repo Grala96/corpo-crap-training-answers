@@ -43,7 +43,7 @@ jobs:
           # Automatically add each PDF file to the HTML list
           for file in *.pdf; do
               if [ -f "$file" ]; then
-                  echo "        <li><a href=\"$file\" download>$file</a></li>" >> index.html
+                  echo "        <li><a href=\"$file\" target=\"_blank\">$file 📄</a></li>" >> index.html
               fi
           done
 
